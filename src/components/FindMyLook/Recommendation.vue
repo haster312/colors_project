@@ -11,9 +11,9 @@
         </h2>
         <div class="recommendation-list">
           <RecommendationItem
-              v-for="(recommendation, index) in recommendations"
-              v-bind:key="index"
-              :recommendation="recommendation"
+            v-for="(recommendation, index) in recommendations"
+            v-bind:key="index"
+            :recommendation="recommendation"
           />
         </div>
       </div>
@@ -28,7 +28,7 @@ import RecommendationItem from "@/components/FindMyLook/RecommendationItem";
 
 export default {
   name: "Recommendation",
-  components: {RecommendationItem, Camera },
+  components: { RecommendationItem, Camera },
   data() {
     return {
       player: null,
