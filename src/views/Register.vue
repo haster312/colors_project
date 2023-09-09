@@ -37,7 +37,7 @@ import BrandSelector from "@/components/Register/BrandSelector";
 import SkinTypeSelector from "@/components/Register/SkinTypeSelector";
 
 export default {
-  components: {SkinTypeSelector, BrandSelector},
+  components: { SkinTypeSelector, BrandSelector },
   data() {
     return {
       isLoading: false,

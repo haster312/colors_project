@@ -12,7 +12,12 @@
             v-bind:key="index"
           >
             <div
-              :class="[{ 'product-detail': true, active: item.id === selectedProductId }]"
+              :class="[
+                {
+                  'product-detail': true,
+                  active: item.id === selectedProductId,
+                },
+              ]"
               :data-config="item.configuration_reset"
               :data-product-id="item.id"
               :data-category="category"
@@ -63,7 +68,7 @@ export default {
       if (this.isCollectionNotEmpty) {
         const selectedProduct = this.collection.products[this.category];
 
-        return selectedProduct.id;
+        return selectedProduct ? selectedProduct.id : 0;
       }
       return 0;
     },

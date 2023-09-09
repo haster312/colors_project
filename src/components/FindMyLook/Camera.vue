@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import {mapGetters} from "vuex";
-import {Dom, Effect, Module, Player, Webcam} from "@banuba/webar";
+import { mapGetters } from "vuex";
+import { Dom, Effect, Module, Player, Webcam } from "@banuba/webar";
 import data from "@banuba/webar/dist/BanubaSDK.data";
 import wasm from "@banuba/webar/dist/BanubaSDK.wasm";
 import simd from "@banuba/webar/dist/BanubaSDK.simd.wasm";

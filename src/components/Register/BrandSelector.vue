@@ -67,8 +67,8 @@ export default {
     }
 
     span {
-      display:table-cell;
-      vertical-align:middle;
+      display: table-cell;
+      vertical-align: middle;
       font-size: 16px;
       font-weight: bold;
       word-wrap: break-word;

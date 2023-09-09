@@ -10,20 +10,11 @@
           Your personalized make up options
         </h2>
         <div class="recommendation-list">
-          <div
-            class="item"
-            v-for="(recommendation, index) in recommendations"
-            v-bind:key="index"
-            @click="tryRecommendation(recommendation)"
-          >
-            <div class="preview">
-              <img src="../../assets/images/sample.png" alt="" />
-            </div>
-            <div class="detail">
-              <h4>{{ recommendation.title }}</h4>
-              <p>{{ recommendation.reason }}</p>
-            </div>
-          </div>
+          <RecommendationItem
+              v-for="(recommendation, index) in recommendations"
+              v-bind:key="index"
+              :recommendation="recommendation"
+          />
         </div>
       </div>
     </b-container>
@@ -33,10 +24,11 @@
 <script type="module">
 import { mapActions, mapGetters } from "vuex";
 import Camera from "@/components/FindMyLook/Camera";
+import RecommendationItem from "@/components/FindMyLook/RecommendationItem";
 
 export default {
   name: "Recommendation",
-  components: { Camera },
+  components: {RecommendationItem, Camera },
   data() {
     return {
       player: null,
@@ -67,11 +59,6 @@ export default {
         this.loaded = true;
       }, 1000);
     },
-    // View fixtures - recommendation for data structure
-    tryRecommendation(recommendation) {
-      this.createCollectionByRecommendation({ ...recommendation });
-      this.$router.push({ name: "TryOn" });
-    },
   },
 };
 </script>
@@ -83,41 +70,5 @@ export default {
 .recommendation-list {
   max-height: 450px;
   overflow-y: scroll;
-
-  .item {
-    display: grid;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-radius: 25px;
-    background-color: #f8f8f9;
-    grid-template-columns: 30% 70%;
-    gap: 5px;
-
-    div {
-      display: inline-block;
-    }
-
-    img {
-      width: 100px;
-    }
-
-    .detail {
-      max-height: 150px;
-      padding-left: 10px;
-
-      h4 {
-        font-size: 14px;
-        line-height: 16px;
-        font-weight: bold;
-        color: #191819;
-      }
-      p {
-        font-size: 12px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-      }
-    }
-  }
 }
 </style>

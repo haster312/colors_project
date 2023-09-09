@@ -3,21 +3,21 @@
     <h2 class="title">What is your skin type?</h2>
     <ul class="skin-list">
       <li
-          :class="{
-        left: direction === 'left',
-        right: direction === 'right',
-      }"
-          v-for="direction of Object.keys(skinList)"
-          v-bind:key="direction"
+        :class="{
+          left: direction === 'left',
+          right: direction === 'right',
+        }"
+        v-for="direction of Object.keys(skinList)"
+        v-bind:key="direction"
       >
-      <span
+        <span
           :class="[{ selected: info.skinType.includes(skin) }]"
           v-for="skin in skinList[direction]"
           v-bind:key="skin"
           @click="selectSkin"
           :data-value="skin"
-      >{{ skin }}</span
-      >
+          >{{ skin }}</span
+        >
       </li>
     </ul>
   </section>
