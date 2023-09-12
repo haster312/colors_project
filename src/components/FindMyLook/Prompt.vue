@@ -27,6 +27,8 @@
 </template>
 
 <script>
+import {mapActions} from "vuex";
+
 export default {
   name: "Prompt",
   data() {
@@ -39,16 +41,23 @@ export default {
     };
   },
   methods: {
+    ...mapActions({
+      loadRecommendations: "Recommendation/loadRecommendations",
+    }),
     getRecommendation() {
       this.errorMessage = "";
       if (this.promptData === "") {
         this.errorMessage = "Prompt data cannot be empty";
       } else {
         this.isLoading = true;
+        this.promptData = this.promptData.toLowerCase();
+        this.loadRecommendations(this.promptData);
+
         const interval = setInterval(() => {
           this.processedValue += 1;
           if (this.processedValue >= this.maxValue) {
             clearInterval(interval);
+            this.isLoading = false;
             this.$router.push({ name: "Recommendation" });
           }
         }, 100);

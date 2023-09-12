@@ -180,4 +180,150 @@ export default [
     name: "ColorPop Super Shock Highlighter (Shade: Flexitarian)",
     configuration_reset: 'Makeup.highlighter("0.99 0.98 0.95 0.14")',
   },
+  {
+    id: 26,
+    type: "Setting Spray",
+    name: "Urban Decay All Nighter Setting Spray",
+  },
+  {
+    id: 27,
+    type: "Foundation",
+    name: "Kat Von D Beauty Lock-It Foundation",
+  },
+  {
+    id: 28,
+    type: "Bronzing Powder",
+    name: "NARS Bronzing Powder in Laguna",
+  },
+  {
+    id: 29,
+    type: "Eyeliner",
+    name: "Maybelline Lasting Drama Gel Liner",
+  },
+  {
+    id: 30,
+    type: "Eyeliner",
+    name: "Benefit Cosmetics They're Real! Push-Up Liner",
+  },
+  {
+    id: 31,
+    type: "Skin Tint",
+    name: "Glossier Perfecting Skin Tint",
+  },
+  {
+    id: 32,
+    type: "Powder Foundation",
+    name: "BareMinerals BAREPRO 16-Hour Powder Foundation",
+  },
+  {
+    id: 33,
+    type: "Blush",
+    name: "NARS Bronzing Powder",
+  },
+  {
+    id: 34,
+    type: "Mascara",
+    name: "Tarte Tarteist Lash Paint Mascara",
+  },
+  {
+    id: 35,
+    type: "Highlighter",
+    name: "Benefit Dandelion Twinkle Highlighter",
+  },
+  {
+    id: 36,
+    type: "Foundation",
+    name: "Fenty Beauty Pro Filt'r Hydrating Longwear Foundation",
+    configuration_reset: 'Skin.color("1.00 0.94 0.73 0.90")',
+  },
+  {
+    id: 37,
+    type: "Blush",
+    name: "Too Faced Love Flush Long-Lasting 16-Hour Blush",
+    configuration_reset: 'Makeup.blushes("0.87 0.45 0.62 0.33")',
+  },
+  {
+    id: 38,
+    type: "Eyeshadow",
+    name: "Bobbi Brown Long-Wear Cream Shadow Stick",
+    configuration_reset: 'Makeup.eyeshadow("0.35 0.16 0.03 0.44")',
+  },
+  {
+    id: 39,
+    type: "Bronzer",
+    name: "Tarte Goodbye Beneath Sunshine Bronzer",
+    configuration_reset: 'Makeup.contour("0.76 0.44 0.28 0.20")',
+  },
+  {
+    id: 40,
+    type: "Mascara",
+    name: "Laura Mercier Caviar Volume Mascara",
+    configuration_reset: 'Eyelashes.color("0.10 0.07 0.08 0.45")',
+  },
+  {
+    id: 41,
+    type: "Lipstick",
+    name: "Nars Lipstick in Dolce Vita",
+    configuration_reset:
+      'Lips.color("0.82 0.38 0.37 0.90");Lips.brightness(1.1);Lips.saturation(1);Lips.shineIntensity(1);Lips.shineBleeding(1);Lips.shineScale(0);Lips.glitterIntensity(0);Lips.glitterBleeding(0);Lips.glitterGrain(0)',
+  },
+  {
+    id: 42,
+    type: "Foundation",
+    name: "Fenty Beauty Pro Filt'r Soft Matte Longwear Foundation",
+  },
+  {
+    id: 43,
+    type: "Bronzer",
+    name: "Too Faced Chocolate Soleil Bronzer",
+  },
+  {
+    id: 44,
+    type: "Translucent Powder",
+    name: "BareMinerals Invisible Light Translucent Powder Duo",
+  },
+  {
+    id: 45,
+    type: "Mascara",
+    name: "Maybelline The Falsies Lash Lift Mascara",
+  },
+  {
+    id: 46,
+    type: "Eyeshadow Palette",
+    name: "ColourPop Off Tropic Collection Eyeshadow Palette",
+  },
+  {
+    id: 47,
+    type: "Concealer",
+    name: "Charlotte Tilbury Magic Away Concealer",
+  },
+  {
+    id: 48,
+    type: "Setting Mist",
+    name: "Morphe Continuous Setting Mist",
+  },
+  {
+    id: 49,
+    type: "Foundation",
+    name: "NARS Soft Matte Complete Foundation",
+    configuration_reset:
+      'Skin.softening(0.43);Skin.color("0.98 0.82 0.54 0.9")',
+  },
+  {
+    id: 50,
+    type: "Setting Spray",
+    name: "Morphe Continuous Mist Setting Spray",
+  },
+  {
+    id: 51,
+    type: "Mascara",
+    name: "NYX Faux Eyes Mascara",
+    configuration_reset: 'Eyelashes.color("0.06 0.04 0.05 0.64")',
+  },
+  {
+    id: 52,
+    type: "Blush",
+    name: "MAC Mineralize Blush",
+    configuration_reset: 'Makeup.blushes("0.91 0.68 0.82 0.33")',
+  },
 ];

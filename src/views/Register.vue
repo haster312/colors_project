@@ -171,7 +171,7 @@ export default {
 }
 .register-steps {
   .tab-pane {
-    padding-top: 75px;
+    padding-top: 25px;
   }
   .title {
     font-size: 28px;
@@ -184,7 +184,7 @@ export default {
     bottom: 0;
     right: 0;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 }
 </style>

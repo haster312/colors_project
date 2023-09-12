@@ -53,7 +53,6 @@ export default {
       // fake api loading
       setTimeout(() => {
         this.loadProducts();
-        this.loadRecommendations();
 
         this.isLoading = false;
         this.loaded = true;
