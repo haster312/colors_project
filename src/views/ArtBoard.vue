@@ -36,7 +36,7 @@ export default {
     };
   },
   beforeMount() {
-    for (let i = 1; i < 7; i++) {
+    for (let i = 1; i < 4; i++) {
       this.images = require.context("@/assets/images", false, /\.png$/);
       this.galleryItem.push(this.images("./artboard_" + i + ".png"));
     }
@@ -111,7 +111,7 @@ export default {
       &.logo-no-text {
         position: absolute;
         top: 120px;
-        left: 270px;
+        left: 240px;
         border: none;
         img {
           width: 100px;

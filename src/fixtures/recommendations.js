@@ -1,44 +1,40 @@
 export default [
   {
-    title: "Radiant Glow for a Hot Wedding Party",
+    title:
+      "Edgy Hiking Makeup Look Advice: Bring out your adventurous side with an edgy look that lasts on a hiking adventure!",
+    keywords: "hiking,outdoor,activities",
     reason:
-      "Achieve a radiant glow that withstands the heat of the wedding party. Begin by applying Maybelline Baby Skin Instant Pore Eraser as a primer. Create a flawless base with MAC Studio Fix Fluid SPF 15 and use Nars Radiant Creamy Concealer to cover any imperfections. Enhance your eyes using the 3CE Mood Recipe Multi Eye Color Palette. Define your eyes with Loreal Infallible Pro-Last Waterproof Pencil Eyeliner and add volume to your lashes with Maybelline Lash Sensational Mascara. Give your cheeks a warm flush with MAC Powder Blush in Melba. Finally, make a bold statement with Nars Velvet Matte Lip Pencil in Dragon Girl. This look will keep you glowing and vibrant throughout the celebration.",
+      "1. Urban Decay All Nighter Setting Spray: This will keep your makeup in place during your outdoor activities. 2. Kat Von D Beauty Lock-It Foundation: For a matte and long-lasting base that won't sweat off. 3. NARS Bronzing Powder in Laguna: Create a subtle sun-kissed glow for a natural day look. 4. Maybelline Lasting Drama Gel Liner: Achieve an edgy look by adding wings with precision and staying power. 5. Benefit Cosmetics They're Real! Push-Up Liner: Give your eyes a dramatic finish that won't smudge with this highly pigmented pencil liner.",
+    products: [{ id: 26 }, { id: 27 }, { id: 28 }, { id: 29 }, { id: 30 }],
+  },
+  {
+    title:
+      "Get Romantic Boho Chic Look for a Wedding Ceremony Advice: Start with a natural base and choose products that will last in the warm and sunny climate",
+    keywords: "wedding,long time",
+    reason:
+      "* Fenty Beauty Pro Filt’r Hydrating Longwear Foundation – perfect for dry skin while being lightweight. * Too Faced Love Flush Long-Lasting 16-Hour Blush – lasting all day, with great vibrancy for more of a dramatic boho chic look. * Bobbi Brown Long-Wear Cream Shadow Stick – easy to apply, this product will provide a nice and subtle look perfect for a casual wedding. * Tarte Goodbye Beneath Sunshine Bronzer – build the glow with a bronzer that won’t appear ashy on lighter skin tones. * Laura Mercier Caviar Volume Mascara – helps lift and curl every single lash, adding more volume to the look. * Nars Lipstick in Dolce Vita – provides a light pink shade with a bit of shimmer, great for a romantic boho chic look.",
     products: [
-      { id: 2 },
-      { id: 19 },
-      { id: 16 },
-      { id: 13 },
-      { id: 11 },
-      { id: 7 },
-      { id: 23 },
+      { id: 36 },
+      { id: 37 },
+      { id: 38 },
+      { id: 39 },
+      { id: 40 },
+      { id: 41 },
     ],
   },
   {
-    title: "Classic Elegance for a Hot Wedding Party",
+    title:
+      "Get Ready for the Gym with These Makeup Basics Advice: Keep your makeup simple and light when you’re working out to avoid any problems",
+    keywords: "Gym",
     reason:
-      "Embrace classic elegance that endures the hot weather at the wedding party. Start with Loreal Infallible Matte-Lock Mattifying Primer to control shine. Achieve a flawless complexion using Nars Natural Radiant Longwear Foundation. Create alluring eyes with the MAC Art Library Flame-Boyant Palette and define them with the 3CE Super Slim Pen Eyeliner. Make your lashes stand out with Maybelline Falsies Lash Lift Mascara. Add a touch of warmth to your cheeks with ColorPop Super Shock Blush in Cruel Intentions. Finish off with the timeless MAC Retro Matte Lipstick in Ruby Woo. This look exudes sophistication and timeless charm.",
+      "* Charlotte Tilbury Magic Away Concealer - Perfect for light coverage and concealing any spots or dark circles under the eyes. * Morphe Continuous Setting Mist - Prevents sweating away of the makeup, and keeps it looking fresh all day. * NARS Soft Matte Complete Foundation - Lightweight and long lasting, ensuring the makeup stays put during a sweaty workout. * Morphe Continuous Mist Setting Spray - Lightweight and fragrance-free to keep your skin feeling comfortable and refreshed. * NYX Faux Eyes Mascara - Lightweight, long lasting, and volumizing for stunning eyes. * MAC Mineralize Blush - Sweat-resistant and provides a natural looking flush.",
     products: [
-      { id: 2 },
-      { id: 19 },
-      { id: 16 },
-      { id: 13 },
-      { id: 11 },
-      { id: 7 },
-      { id: 23 },
-    ],
-  },
-  {
-    title: "Bold Glam for a Hot Wedding Party",
-    reason:
-      "Opt for a bold and glamorous look that stands out at the hot wedding party. Begin with MAC Prep + Prime Skin to ensure a smooth canvas. Achieve long-lasting coverage with Maybelline Superstay Full Coverage Foundation. Create captivating eyes with the Nars Ignited Eyeshadow Palette and define them using Loreal Infallible The Super Slim Liquid Eyeliner. Amp up your lashes with MAC Extended Play Gigablack Lash Mascara. Add a radiant glow to your complexion with 3CE Mood Recipe Face Blush in Rose Beige. Complete your look with ColorPop Lux Velvet Liquid Lip in Get Money for a statement pout. This look exudes confidence and boldness.",
-    products: [
-      { id: 2 },
-      { id: 19 },
-      { id: 16 },
-      { id: 13 },
-      { id: 11 },
-      { id: 7 },
-      { id: 23 },
+      { id: 36 },
+      { id: 37 },
+      { id: 38 },
+      { id: 49 },
+      { id: 51 },
+      { id: 52 },
     ],
   },
 ];

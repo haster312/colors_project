@@ -38,8 +38,16 @@ const actions = {
   loadProducts({ commit }) {
     commit(SET_PRODUCTS, products);
   },
-  loadRecommendations({ commit }) {
-    commit(SET_RECOMMENDATIONS, recommendations);
+  loadRecommendations({ commit }, context = null) {
+    let filterRecommendation = recommendations;
+    if (context) {
+      filterRecommendation = filterRecommendation.filter((recommendation) => {
+          let keywords = recommendation.keywords.toLowerCase().split(",");
+          return keywords.indexOf(context) > -1;
+      });
+    }
+
+    commit(SET_RECOMMENDATIONS, filterRecommendation);
   },
   loadProductCategory({ commit }) {
     const productCategory = {};
@@ -77,12 +85,17 @@ const actions = {
     };
     recommendation.products.map((value) => {
       const product = filterProductById(value.id);
-      if (product) {
-        collection.products[product.type ?? "Other"] = product;
-        dispatch("applyEffect", {
-          productId: product.id,
-          config: product.configuration_reset.replace(/["]/g, "'").split(";"),
-        });
+      try {
+        if (product) {
+          collection.products[product.type ?? "Other"] = product;
+          dispatch("applyEffect", {
+            productId: product.id,
+            config: product.configuration_reset.replace(/["]/g, "'").split(";"),
+          });
+        }
+
+      } catch (e) {
+        console.log(product)
       }
     });
 
