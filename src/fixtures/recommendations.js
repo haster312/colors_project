@@ -1,40 +1,175 @@
 export default [
   {
-    title:
-      "Edgy Hiking Makeup Look Advice: Bring out your adventurous side with an edgy look that lasts on a hiking adventure!",
-    keywords: "hiking,outdoor,activities",
+    title: "Classic Elegance",
+    keywords: "wedding",
     reason:
-      "1. Urban Decay All Nighter Setting Spray: This will keep your makeup in place during your outdoor activities. 2. Kat Von D Beauty Lock-It Foundation: For a matte and long-lasting base that won't sweat off. 3. NARS Bronzing Powder in Laguna: Create a subtle sun-kissed glow for a natural day look. 4. Maybelline Lasting Drama Gel Liner: Achieve an edgy look by adding wings with precision and staying power. 5. Benefit Cosmetics They're Real! Push-Up Liner: Give your eyes a dramatic finish that won't smudge with this highly pigmented pencil liner.",
-    products: [{ id: 26 }, { id: 27 }, { id: 28 }, { id: 29 }, { id: 30 }],
-  },
-  {
-    title:
-      "Get Romantic Boho Chic Look for a Wedding Ceremony Advice: Start with a natural base and choose products that will last in the warm and sunny climate",
-    keywords: "wedding,long time",
-    reason:
-      "* Fenty Beauty Pro Filt’r Hydrating Longwear Foundation – perfect for dry skin while being lightweight. * Too Faced Love Flush Long-Lasting 16-Hour Blush – lasting all day, with great vibrancy for more of a dramatic boho chic look. * Bobbi Brown Long-Wear Cream Shadow Stick – easy to apply, this product will provide a nice and subtle look perfect for a casual wedding. * Tarte Goodbye Beneath Sunshine Bronzer – build the glow with a bronzer that won’t appear ashy on lighter skin tones. * Laura Mercier Caviar Volume Mascara – helps lift and curl every single lash, adding more volume to the look. * Nars Lipstick in Dolce Vita – provides a light pink shade with a bit of shimmer, great for a romantic boho chic look.",
+      "- Foundation: Nars Natural Radiant Longwear Foundation for a flawless and long-lasting base.\n" +
+      "- Blush: Nars Orgasm Blush for a natural flush of color and a subtle glow.\n" +
+      "- Eyeshadow: MAC Art Library Flame-Boyant Palette for a combination of warm and neutral shades to create a timeless eye look.\n" +
+      "- Contour: Too Faced Chocolate Soleil Bronzer to softly contour and add warmth to the face.\n" +
+      "- Mascara: Maybelline The Falsies Lash Lift Mascara for voluminous and lifted lashes.\n" +
+      "- Lipstick: MAC Matte Lipstick in Ruby Woo for a classic red lip.\n",
     products: [
-      { id: 36 },
-      { id: 37 },
-      { id: 38 },
-      { id: 39 },
-      { id: 40 },
-      { id: 41 },
+      { id: 4 },
+      { id: 17 },
+      { id: 7 },
+      { id: 43 },
+      { id: 45 },
+      { id: 20 },
     ],
   },
   {
-    title:
-      "Get Ready for the Gym with These Makeup Basics Advice: Keep your makeup simple and light when you’re working out to avoid any problems",
-    keywords: "Gym",
+    title: "Romantic Glow",
+    keywords: "wedding",
     reason:
-      "* Charlotte Tilbury Magic Away Concealer - Perfect for light coverage and concealing any spots or dark circles under the eyes. * Morphe Continuous Setting Mist - Prevents sweating away of the makeup, and keeps it looking fresh all day. * NARS Soft Matte Complete Foundation - Lightweight and long lasting, ensuring the makeup stays put during a sweaty workout. * Morphe Continuous Mist Setting Spray - Lightweight and fragrance-free to keep your skin feeling comfortable and refreshed. * NYX Faux Eyes Mascara - Lightweight, long lasting, and volumizing for stunning eyes. * MAC Mineralize Blush - Sweat-resistant and provides a natural looking flush.",
+      "- Foundation: Fenty Beauty Pro Filt'r Hydrating Longwear Foundation for a luminous and hydrated complexion.\n" +
+      "- Blush: Benefit Dandelion Twinkle Highlighter for a soft pink glow on the cheeks.\n" +
+      "- Eyeshadow: Nars Ignited Eyeshadow Palette for shimmery and romantic eye looks.\n" +
+      "- Contour: NARS Bronzing Powder in Laguna to add warmth and definition to the face.\n" +
+      "- Mascara: Tarte Tarteist Lash Paint Mascara for voluminous and fluttery lashes.\n" +
+      "- Lipstick: Nars Velvet Matte Lip Pencil in Dolce Vita for a natural and rosy lip color.\n",
     products: [
       { id: 36 },
-      { id: 37 },
-      { id: 38 },
-      { id: 49 },
+      { id: 35 },
+      { id: 8 },
+      { id: 28 },
+      { id: 34 },
+      { id: 19 },
+    ],
+  },
+  {
+    title: "Glamorous Smoky",
+    keywords: "wedding",
+    reason:
+      "- Foundation: MAC Studio Fix Fluid SPF 15 for a full coverage and long-wearing base.\n" +
+      "- Blush: MAC Powder Blush in Melba for a muted coral blush to complement the smoky eye.\n" +
+      "- Eyeshadow: 3CE Mood Recipe Multi Eye Color Palette for creating sultry and smoky eye looks.\n" +
+      "- Contour: Benefit Hoola Bronzer to sculpt and define the face.\n" +
+      "- Mascara: Maybelline Falsies Lash Lift Mascara for dramatic and voluminous lashes.\n" +
+      "- Lipstick: Nars Velvet Matte Lip Pencil in Dragon Girl for a bold and statement red lip.\n",
+    products: [
+      { id: 3 },
+      { id: 15 },
+      { id: 6 },
+      { id: 28 },
+      { id: 13 },
+      { id: 19 },
+    ],
+  },
+  {
+    title: "Fresh and Natural",
+    keywords: "hot weather",
+    reason:
+      "- Foundation: Glossier Perfecting Skin Tint for a lightweight and natural-looking coverage that allows the skin to breathe.\n" +
+      "- Blush: Nars Orgasm Blush for a subtle flush of color and a hint of shimmer to enhance the natural glow.\n" +
+      "- Eyeshadow: 3CE Triple Shadow in Cotton Shimmer for a soft and neutral eye look that brightens the eyes.\n" +
+      "- Contour: Too Faced Chocolate Soleil Bronzer to add warmth and definition to the face without looking heavy.\n" +
+      "- Mascara: Maybelline Falsies Lash Lift Mascara for voluminous lashes that withstand the heat.\n" +
+      "- Lipstick: 3CE Velvet Lip Tint in Shade Warm & Sweet for a lightweight and long-lasting lip color.\n",
+    products: [
+      { id: 31 },
+      { id: 17 },
+      { id: 9 },
+      { id: 43 },
+      { id: 13 },
+      { id: 22 },
+    ],
+  },
+  {
+    title: "Sun-Kissed Glow",
+    keywords: "hot weather",
+    reason:
+      "- Foundation: Nars Natural Radiant Longwear Foundation for a radiant and long-lasting base with SPF protection.\n" +
+      "- Blush: Benefit Dandelion Twinkle Highlighter for a soft and ethereal glow on the cheeks.\n" +
+      "- Eyeshadow: Nars Ignited Eyeshadow Palette for warm, bronzy tones that complement a sun-kissed look.\n" +
+      "- Contour: NARS Bronzing Powder in Laguna to enhance the natural contours of the face and achieve a bronzed effect.\n" +
+      "- Mascara: Tarte Tarteist Lash Paint Mascara for voluminous and waterproof lashes that won't smudge in the heat.\n" +
+      "- Lipstick: Fenty Beauty Pro Filt'r Soft Matte Longwear Foundation in a nude shade for a natural and effortless lip color.\n",
+    products: [
+      { id: 4 },
+      { id: 35 },
+      { id: 8 },
+      { id: 28 },
+      { id: 34 },
+      { id: 42 },
+    ],
+  },
+  {
+    title: "Vibrant and Bold",
+    keywords: "hot weather",
+    reason:
+      "- Foundation: Maybelline Superstay Full Coverage Foundation for a long-lasting and sweat-proof base.\n" +
+      "- Blush: MAC Powder Blush in Melba for a peachy and matte finish that stays on all day.\n" +
+      "- Eyeshadow: ColourPop Off Tropic Collection Eyeshadow Palette for a mix of vibrant and tropical shades to create a bold eye look.\n" +
+      "- Contour: Benefit Hoola Bronzer to sculpt and define the face without looking heavy or cakey.\n" +
+      "- Mascara: MAC Extended Play Gigablack Lash Mascara for a smudge-proof and long-wearing formula.\n" +
+      "- Lipstick: Nars Velvet Matte Lip Pencil in Dragon Girl for a bold and vibrant red lip that stands out in the heat.\n" +
+      "\n" +
+      "These makeup styles are designed to withstand the hot weather and keep you looking fresh and beautiful throughout the outdoor event.\n",
+    products: [
+      { id: 5 },
+      { id: 15 },
+      { id: 46 },
+      { id: 28 },
+      { id: 14 },
+      { id: 19 },
+    ],
+  },
+  {
+    title: "Timeless Sophistication",
+    keywords: "business, formal",
+    reason:
+      "- Foundation: NARS Natural Radiant Longwear Foundation for a flawless and long-lasting base with a natural glow. This foundation provides excellent coverage and a radiant finish, perfect for a polished look.\n" +
+      "- Blush: NARS Orgasm Blush for a natural flush of color with subtle shimmer. It adds a touch of warmth to the cheeks and complements various skin tones.\n" +
+      "- Eyeshadow: MAC Art Library Flame-Boyant Palette for a sophisticated and versatile eye look. This palette offers a range of warm-toned shades that can be used to create both subtle and bold eye looks.\n" +
+      "- Contour: NARS Bronzing Powder in Laguna for subtle contouring. It adds dimension and definition to the face without looking too heavy or dramatic.\n" +
+      "- Mascara: Maybelline Falsies Lash Lift Mascara for lengthened and volumized lashes that enhance the eyes without being overly dramatic.\n" +
+      "- Lipstick: NARS Velvet Matte Lip Pencil in Dolce Vita for a natural and polished lip color. It's a versatile shade that complements various skin tones and adds a touch of sophistication.\n",
+    products: [
+      { id: 4 },
+      { id: 17 },
+      { id: 7 },
+      { id: 28 },
+      { id: 13 },
+      { id: 19 },
+    ],
+  },
+  {
+    title: "Classic Neutrals",
+    keywords: "business, formal",
+    reason:
+      "- Foundation: MAC Studio Fix Fluid SPF 15 for a full coverage and long-lasting base that creates a polished and professional complexion.\n" +
+      "- Blush: MAC Powder Blush in Melba for a soft and natural flush of color. It adds a subtle warmth to the cheeks without overpowering the overall look.\n" +
+      "- Eyeshadow: 3CE Mood Recipe Multi Eye Color Palette for a neutral and elegant eye look. This palette offers a range of versatile shades that can be used to create a sophisticated and timeless eye look.\n" +
+      "- Contour: Too Faced Chocolate Soleil Bronzer for a natural and warm contour. It adds subtle definition and warmth to the face without looking too heavy.\n" +
+      "- Mascara: Tarte Tarteist Lash Paint Mascara for lengthened and volumized lashes. It provides a polished and defined look without being too dramatic.\n" +
+      "- Lipstick: MAC Matte Lipstick in Ruby Woo for a classic and bold red lip. It adds a pop of color and confidence to the overall look, while still maintaining a professional appearance.\n",
+    products: [
+      { id: 3 },
+      { id: 15 },
+      { id: 6 },
+      { id: 43 },
+      { id: 34 },
+      { id: 20 },
+    ],
+  },
+  {
+    title: "Polished Professional",
+    keywords: "business, formal",
+    reason:
+      "- Foundation: NARS Natural Radiant Longwear Foundation for a flawless and long-lasting base with a natural glow. It provides excellent coverage and a radiant finish, perfect for a polished and professional look.\n" +
+      "- Blush: NARS Orgasm Blush for a natural flush of color with subtle shimmer. It adds a touch of warmth and luminosity to the cheeks, enhancing the overall complexion.\n" +
+      "- Eyeshadow: MAC Art Library Flame-Boyant Palette for a sophisticated and versatile eye look. This palette offers a range of warm-toned shades that can be used to create both subtle and defined eye looks suitable for a professional setting.\n" +
+      "- Contour: NARS Bronzing Powder in Laguna to add subtle contour and definition to the face. It adds dimension without looking too heavy or dramatic.\n" +
+      "- Mascara: Benefit They're Real! Mascara for lengthened, separated, and defined lashes that enhance the eyes without being overly dramatic.\n" +
+      "- Lipstick: NARS Velvet Matte Lip Pencil in Dolce Vita for a natural and polished lip color. It's a versatile shade that complements various skin tones and adds a touch of sophistication.\n",
+    products: [
+      { id: 4 },
+      { id: 17 },
+      { id: 7 },
+      { id: 28 },
+      { id: 19 },
       { id: 51 },
-      { id: 52 },
     ],
   },
 ];

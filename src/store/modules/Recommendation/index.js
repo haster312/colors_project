@@ -42,8 +42,15 @@ const actions = {
     let filterRecommendation = recommendations;
     if (context) {
       filterRecommendation = filterRecommendation.filter((recommendation) => {
-          let keywords = recommendation.keywords.toLowerCase().split(",");
-          return keywords.indexOf(context) > -1;
+        let keywords = recommendation.keywords.toLowerCase();
+        if (keywords.includes(",")) {
+          const matched = keywords.split(",").filter(keyword => {
+            return context.includes(keyword);
+          });
+          return matched.length > 0;
+        } else {
+          return context.includes(keywords);
+        }
       });
     }
 
@@ -93,9 +100,8 @@ const actions = {
             config: product.configuration_reset.replace(/["]/g, "'").split(";"),
           });
         }
-
       } catch (e) {
-        console.log(product)
+        console.log(product);
       }
     });
 
