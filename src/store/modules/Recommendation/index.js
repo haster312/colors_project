@@ -91,7 +91,7 @@ const actions = {
     };
     recommendation.products.map((value) => {
       const product = filterProductById(value.id);
-      console.log(product, product.configuration_reset);
+
       try {
         if (product) {
           product.reason = value.reason;

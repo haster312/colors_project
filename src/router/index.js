@@ -61,20 +61,22 @@ const routes = [
           navigator: true,
           sidebar: true,
           title: "AI Recommendation",
+          parent: "Prompt",
+        },
+      },
+      {
+        path: "try-on",
+        name: "TryOn",
+        component: CosmeticTryOn,
+        meta: {
+          ...defaultMeta,
+          navigator: true,
+          sidebar: true,
+          title: "Cosmetic Try-On",
+          parent: "Prompt",
         },
       },
     ],
-  },
-  {
-    path: "/try-on",
-    name: "TryOn",
-    component: CosmeticTryOn,
-    meta: {
-      ...defaultMeta,
-      navigator: true,
-      sidebar: true,
-      title: "Cosmetic Try-On",
-    },
   },
   {
     path: "/my-collection",
@@ -98,8 +100,10 @@ router.afterEach((to, from) => {
   const fromDepth = from.path.split("/").length;
 
   to.meta.transition = toDepth < fromDepth ? "slide-right" : "slide-left";
-  if (to.name !== from.name) {
-    to.meta.prevRoute = from.name;
+  if (to.meta.parent) {
+    to.meta.prevRoute = to.meta.parent;
+  } else {
+    to.meta.prevRoute = "Home";
   }
 });
 

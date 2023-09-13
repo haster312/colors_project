@@ -5,10 +5,7 @@
       <div class="d-flex justify-content-center mt-5" v-if="isLoading">
         <b-spinner class="ml-auto"></b-spinner>
       </div>
-
-<!--      <div class="d-flex justify-content-center mt-3" v-if="!isLoading" v-html="getCollectionReason">-->
-<!--      </div>-->
-
+      <h2 class="section-title" v-if="collection.title">{{ collection.title }}</h2>
       <ProductList
         v-for="(category, index) in Object.keys(productCategory)"
         v-bind:key="index"

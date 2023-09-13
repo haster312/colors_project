@@ -5,7 +5,7 @@
     </div>
     <div class="detail">
       <h4>{{ recommendation.title }}</h4>
-      <p>{{ recommendation.reason }}</p>
+      <p v-html="reason"></p>
     </div>
   </div>
 </template>
@@ -18,6 +18,11 @@ export default {
   props: {
     recommendation: {
       type: Object,
+    },
+  },
+  computed: {
+    reason() {
+      return this.recommendation.reason.replaceAll("\n", "<br/>");
     },
   },
   methods: {
@@ -53,7 +58,6 @@ export default {
   }
 
   .detail {
-    max-height: 150px;
     padding-left: 10px;
 
     h4 {
@@ -64,9 +68,6 @@ export default {
     }
     p {
       font-size: 12px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
     }
   }
 }
