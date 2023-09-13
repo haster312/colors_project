@@ -1,19 +1,19 @@
 <template>
   <b-container class="art-board-content p-0">
-    <div class="art-board-content__gallery">
-      <div
-        v-for="(image, index) of galleryItem"
-        :class="'art-board-content__gallery__item pos_' + (index + 1)"
-        v-bind:key="index"
-        v-bind:style="{ 'background-image': 'url(' + image + ')' }"
-      ></div>
-      <div class="art-board-content__gallery__item logo-no-text">
-        <img :src="images('./logo_no_text.png')" />
-      </div>
-    </div>
+    <!--    <div class="art-board-content__gallery">-->
+    <!--      <div-->
+    <!--        v-for="(image, index) of galleryItem"-->
+    <!--        :class="'art-board-content__gallery__item pos_' + (index + 1)"-->
+    <!--        v-bind:key="index"-->
+    <!--        v-bind:style="{ 'background-image': 'url(' + image + ')' }"-->
+    <!--      ></div>-->
+    <!--      <div class="art-board-content__gallery__item logo-no-text">-->
+    <!--        <img :src="images('./logo_no_text.png')" />-->
+    <!--      </div>-->
+    <!--    </div>-->
     <div class="art-board-content__welcome">
       <p>Hello, Welcome To</p>
-      <img :src="images('./logo.png')" alt="" />
+      <img src="../assets/images/logo.png" alt="" />
       <p class="pb-3">The future of makeup shopping at your finger tips</p>
       <p class="text-center">
         <b-button
@@ -36,10 +36,10 @@ export default {
     };
   },
   beforeMount() {
-    for (let i = 1; i < 4; i++) {
-      this.images = require.context("@/assets/images", false, /\.png$/);
-      this.galleryItem.push(this.images("./artboard_" + i + ".png"));
-    }
+    // for (let i = 1; i < 4; i++) {
+    //   this.images = require.context("@/assets/images", false, /\.png$/);
+    //   this.galleryItem.push(this.images("./artboard_" + i + ".png"));
+    // }
   },
 };
 </script>
@@ -48,6 +48,9 @@ export default {
 .art-board-content {
   height: 100vh;
   background-color: $primary-color;
+  background-image: url("../assets/images/findmylook.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   &__gallery {
     display: grid;
     width: 100%;

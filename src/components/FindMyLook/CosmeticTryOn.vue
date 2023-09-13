@@ -6,9 +6,8 @@
         <b-spinner class="ml-auto"></b-spinner>
       </div>
 
-      <div class="d-flex justify-content-center mt-3" v-if="!isLoading" v-html="getCollectionReason">
-
-      </div>
+<!--      <div class="d-flex justify-content-center mt-3" v-if="!isLoading" v-html="getCollectionReason">-->
+<!--      </div>-->
 
       <ProductList
         v-for="(category, index) in Object.keys(productCategory)"
@@ -55,9 +54,6 @@ export default {
       productCategory: "Recommendation/productCategory",
       collection: "Recommendation/collection",
     }),
-    getCollectionReason() {
-      return this.collection.reason.replaceAll("\n", "<br>");
-    }
   },
   beforeMount() {
     if (this.collection.title === undefined) {

@@ -94,11 +94,17 @@ const actions = {
       const product = filterProductById(value.id);
       try {
         if (product) {
+          product.reason = value.reason;
           collection.products[product.type ?? "Other"] = product;
-          dispatch("applyEffect", {
+          let effect = {
             productId: product.id,
-            config: product.configuration_reset.replace(/["]/g, "'").split(";"),
-          });
+          };
+
+          if (product.configuration_reset) {
+            effect.config = product.configuration_reset.replace(/["]/g, "'").split(";");
+          }
+
+          dispatch("applyEffect", effect);
         }
       } catch (e) {
         console.log(product);

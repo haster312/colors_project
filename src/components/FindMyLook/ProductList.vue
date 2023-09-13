@@ -27,6 +27,9 @@
             </div>
           </div>
         </div>
+        <p class="product-list__container-reason" v-if="recommendProduct !== null && recommendProduct.reason">
+          <strong>Reason:</strong> {{ recommendProduct.name }} {{ recommendProduct.reason }}
+        </p>
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
@@ -48,13 +51,26 @@ export default {
       type: Array,
     },
   },
+  data() {
+    return {
+      swiper: null,
+    };
+  },
   mounted() {
     const SECOND = 1000; // milliseconds
-    new Swiper(this.$refs.swiper, {
+    this.swiper = new Swiper(this.$refs.swiper, {
       slidesPerView: 2,
       spaceBetween: 10,
       speed: 5 * SECOND,
     });
+
+    if (this.selectedProductId !== 0) {
+      this.products.forEach((product, index) => {
+        if (this.selectedProductId === product.id) {
+          this.swiper.slideTo(index, 500);
+        }
+      });
+    }
   },
   computed: {
     ...mapGetters({
@@ -64,10 +80,17 @@ export default {
     isCollectionNotEmpty() {
       return Object.keys(this.collection.products).length > 0;
     },
+    recommendProduct() {
+      if (this.isCollectionNotEmpty) {
+        const selectedProduct = this.collection.products[this.category];
+        return selectedProduct ?? null;
+      }
+
+      return null;
+    },
     selectedProductId() {
       if (this.isCollectionNotEmpty) {
         const selectedProduct = this.collection.products[this.category];
-
         return selectedProduct ? selectedProduct.id : 0;
       }
       return 0;
@@ -107,6 +130,7 @@ export default {
 
       &.active {
         border: 3px solid $primary-color;
+        order: -1;
       }
 
       p {
@@ -120,6 +144,13 @@ export default {
           text-align: center;
         }
       }
+    }
+
+    &-reason {
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-size: 15px;
+      padding: 5px 10px;
     }
   }
 }
