@@ -77,7 +77,11 @@ export default {
     getConfigs() {
       const configs = Object.values(this.effects);
       return configs.reduce((effectList, item) => {
-        return [...effectList, ...item];
+        if (item !== undefined) {
+          return [...effectList, ...item];
+        } else {
+          return [...effectList]
+        }
       }, []);
     },
   },

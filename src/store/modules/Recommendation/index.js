@@ -72,7 +72,6 @@ const actions = {
   },
   applyEffect({ commit, state }, { productId, config }) {
     const currentEffect = state.effects;
-
     currentEffect[productId] = config;
     commit(SET_EFFECT, currentEffect);
   },
@@ -100,7 +99,7 @@ const actions = {
             productId: product.id,
           };
 
-          if (product.configuration_reset) {
+          if (product.configuration_reset !== undefined) {
             effect.config = product.configuration_reset.replace(/["]/g, "'").split(";");
           }
 
