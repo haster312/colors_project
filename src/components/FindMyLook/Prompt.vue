@@ -40,9 +40,13 @@ export default {
       maxValue: 20,
     };
   },
+  mounted() {
+    this.clearEffects();
+  },
   methods: {
     ...mapActions({
       loadRecommendations: "Recommendation/loadRecommendations",
+      clearEffects: "Recommendation/clearEffects"
     }),
     getRecommendation() {
       this.errorMessage = "";

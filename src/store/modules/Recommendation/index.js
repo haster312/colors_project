@@ -91,6 +91,7 @@ const actions = {
     };
     recommendation.products.map((value) => {
       const product = filterProductById(value.id);
+      console.log(product, product.configuration_reset);
       try {
         if (product) {
           product.reason = value.reason;
@@ -99,11 +100,10 @@ const actions = {
             productId: product.id,
           };
 
-          if (product.configuration_reset !== undefined) {
+          if (product.configuration_reset != null) {
             effect.config = product.configuration_reset.replace(/["]/g, "'").split(";");
+            dispatch("applyEffect", effect);
           }
-
-          dispatch("applyEffect", effect);
         }
       } catch (e) {
         console.log(product);
@@ -157,6 +157,9 @@ const actions = {
     }
 
     commit(SET_COLLECTIONS, collections);
+  },
+  clearEffects({ commit }) {
+    commit(SET_EFFECT, {});
   },
 };
 
